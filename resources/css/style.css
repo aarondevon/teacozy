@@ -1,0 +1,9 @@
+body {
+	font-family: Helvetica;
+	font-size: 22px;
+	color: seashell;
+	background: #000;
+	opacity: 0.9;
+	max-width: 960px;
+	margin: 0 auto;
+}
