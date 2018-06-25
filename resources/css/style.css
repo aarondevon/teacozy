@@ -4,6 +4,34 @@ body {
 	color: seashell;
 	background: #000;
 	opacity: 0.9;
-	max-width: 960px;
+	max-width: 1000px;
 	margin: 0 auto;
+}
+
+header {
+	display: flex;
+	height: 69px;
+	width: 960px;
+	background: #000;
+	border-bottom: 1px solid seashell;
+	position: fixed;
+	top: 0;
+}
+
+.logo	{
+	display: flex;
+	align-items: center;
+	flex-grow: 1;
+}
+.logo img {
+	height: 50px;
+	margin-left: 10px;
+}
+nav ul {
+
+}
+nav li {
+	display: inline-block;
+	text-decoration: underline;
+	padding: 0 10px;
 }
