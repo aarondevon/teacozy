@@ -4,18 +4,20 @@ body {
 	color: seashell;
 	background: #000;
 	opacity: 0.9;
-	max-width: 1000px;
+	max-width: 1200px;
 	margin: 0 auto;
+	text-align: center;
 }
 
 header {
 	display: flex;
 	height: 69px;
-	width: 960px;
+	width: 1250px;
 	background: #000;
 	border-bottom: 1px solid seashell;
 	position: fixed;
 	top: 0;
+	z-index: 1;
 }
 
 .logo	{
@@ -34,4 +36,35 @@ nav li {
 	display: inline-block;
 	text-decoration: underline;
 	padding: 0 10px;
+}
+
+/* Body */
+
+main {
+	display: flex;
+	justify-content: center;
+	
+	width: 1200px;
+	padding-top: 69px;
+}
+
+.hero {
+	background: url(/resources/images/img-mission-background.jpg);
+	background-repeat: no-repeat;
+	padding-top: 70px;
+	height: 700px;
+	display: flex;
+	align-items: center;
+}
+
+.hero-content {
+	background: #000;
+	height: 103px;
+	width: 100%;
+}
+
+.hero-content h2 , .hero-content h4 {
+	margin: 0;
+	padding: 10px;
+
 }
