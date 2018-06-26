@@ -3,25 +3,26 @@ body {
 	font-size: 22px;
 	color: seashell;
 	background: #000;
-	opacity: 0.9;
-	max-width: 1200px;
+	max-width: 1400px;
 	margin: 0 auto;
 	text-align: center;
 }
 
-header {
+.flex-container {
 	display: flex;
+}
+
+header.flex-container {
 	height: 69px;
-	width: 1250px;
 	background: #000;
 	border-bottom: 1px solid seashell;
+	justify-content: center;
 	position: fixed;
 	top: 0;
 	z-index: 1;
 }
 
-.logo	{
-	display: flex;
+.flex-container.logo	{
 	align-items: center;
 	flex-grow: 1;
 }
@@ -29,31 +30,35 @@ header {
 	height: 50px;
 	margin-left: 10px;
 }
-nav ul {
 
-}
 nav li {
 	display: inline-block;
 	text-decoration: underline;
 	padding: 0 10px;
 }
 
-/* Body */
-
-main {
-	display: flex;
-	justify-content: center;
-	width: 1200px;
-	padding-top: 69px;
-	flex-wrap: wrap;
+nav a {
+	color: seashell;
 }
 
-.hero {
+/* Body */
+
+.main-content {
+	margin: auto;
+	width: 1200px;
+	padding-top: 69px;
+	opacity: 0.9;
+}
+
+#hero {
 	background: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg);
 	background-repeat: no-repeat;
 	padding-top: 70px;
 	height: 700px;
-	display: flex;
+	margin: auto;
+}
+
+#hero.flex-container {
 	align-items: center;
 }
 
@@ -69,13 +74,18 @@ main {
 
 }
 
-.tea-month {
+#store {
 	width: 1000px;
+	margin: auto;
 }
 
-.products {
-	display: flex;
+.flex-container.products {
 	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.products div {
+	padding: 5px;
 }
 
 .products img{
@@ -85,24 +95,27 @@ main {
 
 .products h4 {
 	margin: 10px 0;
+} 
+
+#locations-background  {
+	background: url(/resources/images/img-locations-background.jpg);
+	background-repeat: no-repeat;
+	height: 500px;
+	padding: 70px;
 }
 
-.products-row-1 {
-	justify-content: space-between;
+#locations-background h2{
+	margin-bottom: 15px;
 }
 
-.products-row-2 {
+.flex-container.locations {
 	justify-content: center;
 }
 
-.products-row-2 div {
-	padding: 10px;
-} 
-
-.locations {
-	background: url(/resources/images/img-locations-background.jpg);
-	height: 500px;
-	width: 1200px;
-	margin: 0 auto;
-
+.locations div {
+	width: 300px;
+	height: 275px;
+	background: #000;
+	margin: 20px;
+	margin-top: 0;
 }
