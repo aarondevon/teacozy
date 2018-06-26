@@ -99,3 +99,10 @@ main {
 	padding: 10px;
 } 
 
+.locations {
+	background: url(/resources/images/img-locations-background.jpg);
+	height: 500px;
+	width: 1200px;
+	margin: 0 auto;
+
+}
