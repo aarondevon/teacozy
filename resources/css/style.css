@@ -49,7 +49,7 @@ main {
 }
 
 .hero {
-	background: url(/resources/images/img-mission-background.jpg);
+	background: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg);
 	background-repeat: no-repeat;
 	padding-top: 70px;
 	height: 700px;
