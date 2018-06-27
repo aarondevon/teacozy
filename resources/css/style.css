@@ -3,7 +3,6 @@ body {
 	font-size: 22px;
 	color: seashell;
 	background: #000;
-	max-width: 1400px;
 	margin: 0 auto;
 	text-align: center;
 }
@@ -18,14 +17,22 @@ header {
 	height: 69px;
 	background: #000;
 	border-bottom: 1px solid seashell;
+	width: 100%;
 	position: fixed;
 	top: 0;
 	z-index: 1;
+	padding-top: 10px;
 }
 
 header img {
 	height: 50px;
 	margin-left: 10px;
+}
+
+nav {
+	flex-grow: 1;
+	text-align: right;
+	display: inline-block;
 }
 
 nav li {
@@ -34,10 +41,6 @@ nav li {
 	padding: 0 10px;
 }
 
-nav {
-	flex-grow: 1;
-	text-align: right;
-}
 nav a {
 	color: seashell;
 }
@@ -96,7 +99,7 @@ nav a {
 } 
 
 #locations-background  {
-	background: url(/resources/images/img-locations-background.jpg);
+	background: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg);
 	background-repeat: no-repeat;
 	height: 500px;
 	padding: 70px;
