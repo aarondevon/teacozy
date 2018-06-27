@@ -10,23 +10,20 @@ body {
 
 .flex-container {
 	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
 }
 
-header.flex-container {
+header {
 	height: 69px;
 	background: #000;
 	border-bottom: 1px solid seashell;
-	justify-content: center;
 	position: fixed;
 	top: 0;
 	z-index: 1;
 }
 
-.flex-container.logo	{
-	align-items: center;
-	flex-grow: 1;
-}
-.logo img {
+header img {
 	height: 50px;
 	margin-left: 10px;
 }
@@ -37,6 +34,10 @@ nav li {
 	padding: 0 10px;
 }
 
+nav {
+	flex-grow: 1;
+	text-align: right;
+}
 nav a {
 	color: seashell;
 }
@@ -58,8 +59,9 @@ nav a {
 	margin: auto;
 }
 
-#hero.flex-container {
+#hero {
 	align-items: center;
+	margin-bottom: 100px;
 }
 
 .hero-content {
@@ -79,13 +81,9 @@ nav a {
 	margin: auto;
 }
 
-.flex-container.products {
-	flex-wrap: wrap;
-	justify-content: center;
-}
-
 .products div {
 	padding: 5px;
+	opacity: 1;
 }
 
 .products img{
@@ -102,14 +100,11 @@ nav a {
 	background-repeat: no-repeat;
 	height: 500px;
 	padding: 70px;
+	margin-top: 75px;
 }
 
 #locations-background h2{
 	margin-bottom: 15px;
-}
-
-.flex-container.locations {
-	justify-content: center;
 }
 
 .locations div {
@@ -118,4 +113,16 @@ nav a {
 	background: #000;
 	margin: 20px;
 	margin-top: 0;
+}
+
+#contact {
+	height: 200px;
+}
+
+footer {
+	text-align: left;
+}
+
+footer p {
+	margin-left: 20px;
 }
