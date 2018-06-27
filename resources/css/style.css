@@ -17,9 +17,10 @@ header {
 	height: 69px;
 	background: #000;
 	border-bottom: 1px solid seashell;
-	width: 100%;
 	position: fixed;
 	top: 0;
+	left: 150px;
+	right: 150px;
 	z-index: 1;
 	padding-top: 10px;
 }
